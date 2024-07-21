@@ -7,8 +7,7 @@ export const useLoginStore = defineStore('useLoginStore', () => {
   }
   const objGather = ref<UseLogin>({
     title: 'useLogin',
-    msg: "pinia获取",
-    count: 123
+    msg: "pinia获取"
   });
   return { objGather };
 });
