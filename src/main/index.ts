@@ -13,6 +13,7 @@ function createWindow(): void {
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
+      // 使用字节码来保护预加载脚本
       sandbox: false
     }
   });
